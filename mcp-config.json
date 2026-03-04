@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "gmail-estatement": {
+      "command": "npx",
+      "args": ["-y", "estatement-mcp", "gmail"]
+    },
+    "statement-processor": {
+      "command": "npx",
+      "args": ["-y", "estatement-mcp", "processor"]
+    },
+    "finance-estatement": {
+      "command": "npx",
+      "args": ["-y", "estatement-mcp", "finance"]
+    }
+  }
+}

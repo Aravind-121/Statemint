@@ -1,0 +1,52 @@
+{
+  "name": "estatement-mcp",
+  "version": "1.0.0",
+  "description": "MCP servers for e-statement intelligence — fetch from Gmail, parse PDFs, analyze spending",
+  "type": "module",
+  "bin": {
+    "estatement-mcp": "./bin/cli.js"
+  },
+  "scripts": {
+    "gmail": "node gmail-mcp-server/src/index.js",
+    "processor": "node statement-processor/src/index.js",
+    "finance": "node finance-mcp-server/src/index.js",
+    "auth": "node gmail-mcp-server/src/auth.js",
+    "migrate": "node statement-processor/src/db.js migrate",
+    "setup": "node bin/cli.js setup",
+    "chat": "node bin/cli.js chat"
+  },
+  "keywords": [
+    "mcp",
+    "estatement",
+    "finance",
+    "gmail",
+    "statement",
+    "pdf",
+    "spending",
+    "bank-statement",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "dotenv": "^17.3.1",
+    "google-auth-library": "^10.6.1",
+    "googleapis": "^171.4.0",
+    "ollama": "^0.6.3",
+    "open": "^11.0.0",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.13.0",
+    "zod": "^3.25.67"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "client/",
+    "gmail-mcp-server/src/",
+    "statement-processor/src/",
+    "finance-mcp-server/src/",
+    ".env.example",
+    "README.md"
+  ]
+}

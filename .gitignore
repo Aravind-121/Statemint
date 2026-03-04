@@ -1,0 +1,22 @@
+node_modules/
+.env
+*.log
+.DS_Store
+
+# Google OAuth secrets
+credentials.json
+token.json
+
+# Downloaded PDFs
+downloads/
+
+# Sub-package lockfiles (root lockfile is the source of truth)
+gmail-mcp-server/node_modules/
+gmail-mcp-server/package-lock.json
+statement-processor/node_modules/
+statement-processor/package-lock.json
+finance-mcp-server/node_modules/
+finance-mcp-server/package-lock.json
+
+# Cursor config (contains local paths)
+.cursor/
