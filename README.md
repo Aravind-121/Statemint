@@ -58,18 +58,6 @@ Add this to your MCP client config (Cursor, Claude Desktop, etc.):
 }
 ```
 
-## Commands
-
-| Command | Description |
-|---------|-------------|
-| `npx estatement-mcp setup` | Interactive first-time setup |
-| `npx estatement-mcp auth` | Gmail OAuth authentication |
-| `npx estatement-mcp migrate` | Create database tables |
-| `npx estatement-mcp chat` | Interactive chat with Ollama (qwen2.5) |
-| `npx estatement-mcp gmail` | Start Gmail MCP server |
-| `npx estatement-mcp processor` | Start Statement Processor MCP server |
-| `npx estatement-mcp finance` | Start Finance MCP server |
-| `npx estatement-mcp config` | Show current configuration |
 
 ## Supported Statement Types
 
@@ -77,10 +65,6 @@ Add this to your MCP client config (Cursor, Claude Desktop, etc.):
 |------|:---:|-------------|
 | `credit_card` | Yes | Credit card statements |
 | `bank_account` | Yes | Savings / current account statements |
-| `loan` | Yes | Loan / EMI statements |
-| `insurance` | Yes | Insurance premium statements |
-| `utility` | Yes | Electricity, gas, broadband bills |
-| `other` | Fallback | Any other PDF with transactions |
 
 ## Chat with Ollama
 
@@ -163,10 +147,3 @@ Override with the `ESTATEMENT_MCP_HOME` environment variable.
 - `getTransactions` — Query individual transactions with filters
 - `getSpendingSummary` — High-level overview across all data
 
-## Supported Banks
-
-HDFC, ICICI, SBI, Axis, Kotak, RBL, IndusInd, IDFC, Yes Bank, Amex, Citi, HSBC, Standard Chartered, AU Small Finance Bank.
-
-## License
-
-ISC
